@@ -2,25 +2,22 @@
 
 :root {
   --bg-primary: #ffffff;
-  --bg-surface: #f8f9fa;
+  --bg-surface: #f9fafb;
   --bg-surface-elevated: #ffffff;
   --brand-yellow: #FFCC00;
   --brand-yellow-hover: #E5B800;
-  --brand-yellow-muted: rgba(255, 204, 0, 0.2);
-  --brand-carbon: #111113;
-  --border-subtle: #e5e7eb;
-  --border-strong: #d1d5db;
-  --border-yellow: #FFCC00;
-  --text-primary: #0f1013;
-  --text-secondary: #4b5563;
-  --text-muted: #6b7280;
-  --accent-red: #EF4444;
+  --brand-carbon: #09090b;
+  --border-subtle: #e4e4e7;
+  --border-strong: #d4d4d8;
+  --text-primary: #09090b;
+  --text-secondary: #52525b;
+  --text-muted: #71717a;
 }
 
 @theme inline {
   --font-display: var(--font-barlow-condensed);
-  --font-sans: var(--font-space-grotesk);
-  --font-mono: var(--font-jetbrains-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-inter);
   --color-brand-yellow: var(--brand-yellow);
   --color-brand-yellow-hover: var(--brand-yellow-hover);
   --color-brand-carbon: var(--brand-carbon);
@@ -36,101 +33,55 @@
 
 html {
   background-color: #ffffff;
-  color: #0f1013;
+  color: #09090b;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #ffffff;
-  color: #0f1013;
-  font-family: var(--font-space-grotesk), sans-serif;
-  overflow-x: hidden;
-  selection-background-color: #FFCC00;
-  selection-color: #000000;
+  color: #09090b;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 ::selection {
   background: #FFCC00;
-  color: #0f1013;
+  color: #09090b;
 }
 
-/* Industrial Font Utilities */
 .font-display {
   font-family: var(--font-barlow-condensed), -apple-system, sans-serif;
 }
 
 .font-telemetry {
-  font-family: var(--font-jetbrains-mono), monospace;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Caution Stripes Bar */
-.caution-stripes {
+/* Subtle Steel Cable Texture */
+.steel-cable-pattern {
   background: repeating-linear-gradient(
-    -45deg,
-    #FFCC00,
-    #FFCC00 12px,
-    #111113 12px,
-    #111113 24px
+    0deg,
+    #27272a,
+    #27272a 2px,
+    #52525b 2px,
+    #52525b 4px
   );
 }
 
-.caution-stripes-slim {
-  background: repeating-linear-gradient(
-    -45deg,
-    #FFCC00,
-    #FFCC00 6px,
-    #111113 6px,
-    #111113 12px
-  );
-}
-
-/* Subtle Industrial Blueprint Grid Pattern (Light Mode) */
-.bg-blueprint-grid {
-  background-size: 40px 40px;
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-}
-
-/* Tactical Crosshairs */
-.crosshair-corner {
-  position: relative;
-}
-.crosshair-corner::before,
-.crosshair-corner::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  pointer-events: none;
-}
-.crosshair-corner::before {
-  top: -1px;
-  left: -1px;
-  border-top: 2px solid #FFCC00;
-  border-left: 2px solid #FFCC00;
-}
-.crosshair-corner::after {
-  bottom: -1px;
-  right: -1px;
-  border-bottom: 2px solid #FFCC00;
-  border-right: 2px solid #FFCC00;
-}
-
-/* Custom Scrollbar */
+/* Custom Clean Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f2f4;
+  background: #f4f4f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFCC00;
+  background: #d4d4d8;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e5b800;
+  background: #FFCC00;
 }

@@ -29,7 +29,7 @@ export default function TelemetrySidebar() {
   return (
     <aside
       aria-label="Quick Actions Dock"
-      className="fixed right-0 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col bg-white border-l border-t border-b border-zinc-300 shadow-xl backdrop-blur-md"
+      className="fixed right-0 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col bg-white shadow-xl backdrop-blur-md"
     >
       {/* Top Accent Strip */}
       <div className="w-full h-1 bg-[#FFCC00]"></div>
@@ -40,12 +40,12 @@ export default function TelemetrySidebar() {
           href="/contact"
           onMouseEnter={() => setActiveTooltip("quote")}
           onMouseLeave={() => setActiveTooltip(null)}
-          className="relative w-12 h-12 flex items-center justify-center text-zinc-700 hover:text-black hover:bg-[#FFCC00] transition-colors border-b border-zinc-200 group"
+          className="relative w-12 h-12 flex items-center justify-center text-zinc-700 hover:text-black hover:bg-[#FFCC00] transition-colors group"
           title="Instant Crane Hire RFQ"
         >
           <Calculator className="w-5 h-5" />
           {activeTooltip === "quote" && (
-            <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-[#FFCC00] border border-black px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
+            <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-[#FFCC00] px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
               Quick Crane RFQ
             </span>
           )}
@@ -56,12 +56,12 @@ export default function TelemetrySidebar() {
           href="/services"
           onMouseEnter={() => setActiveTooltip("specs")}
           onMouseLeave={() => setActiveTooltip(null)}
-          className="relative w-12 h-12 flex items-center justify-center text-zinc-700 hover:text-black hover:bg-[#FFCC00] transition-colors border-b border-zinc-200 group"
+          className="relative w-12 h-12 flex items-center justify-center text-zinc-700 hover:text-black hover:bg-[#FFCC00] transition-colors group"
           title="Fleet Specifications & Load Charts"
         >
           <FileText className="w-5 h-5" />
           {activeTooltip === "specs" && (
-            <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-white border border-black px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
+            <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-white px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
               Fleet Spec Charts
             </span>
           )}
@@ -72,12 +72,12 @@ export default function TelemetrySidebar() {
           href="tel:+94112915566"
           onMouseEnter={() => setActiveTooltip("phone")}
           onMouseLeave={() => setActiveTooltip(null)}
-          className="relative w-12 h-12 flex items-center justify-center text-zinc-700 hover:text-black hover:bg-[#FFCC00] transition-colors border-b border-zinc-200 group"
+          className="relative w-12 h-12 flex items-center justify-center text-zinc-700 hover:text-black hover:bg-[#FFCC00] transition-colors group"
           title="Direct Dispatch Call"
         >
           <PhoneCall className="w-5 h-5 group-hover:text-black" />
           {activeTooltip === "phone" && (
-            <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-[#FFCC00] border border-black px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
+            <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-[#FFCC00] px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
               Call Dispatch: +94 11 291 5566
             </span>
           )}
@@ -95,7 +95,7 @@ export default function TelemetrySidebar() {
             <ArrowUp className="w-4 h-4" />
             <span className="text-[8px] font-telemetry uppercase tracking-tighter font-bold">TOP</span>
             {activeTooltip === "top" && (
-              <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-zinc-200 border border-black px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
+              <span className="absolute right-14 whitespace-nowrap bg-zinc-900 text-zinc-200 px-2.5 py-1 text-xs font-telemetry uppercase tracking-wider shadow-lg">
                 Jump To Top
               </span>
             )}
@@ -104,7 +104,7 @@ export default function TelemetrySidebar() {
       </div>
 
       {/* Mechanical Bottom Indicator */}
-      <div className="py-1 px-1 flex justify-center bg-zinc-100 border-t border-zinc-200">
+      <div className="py-1 px-1 flex justify-center bg-zinc-100">
         <Crosshair className="w-3.5 h-3.5 text-zinc-400" />
       </div>
     </aside>

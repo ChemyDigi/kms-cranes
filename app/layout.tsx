@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
-import TelemetrySidebar from "@/components/TelemetrySidebar";
 import CraneScrollHook from "@/components/CraneScrollHook";
 import Footer from "@/components/Footer";
 
@@ -13,17 +12,10 @@ const barlowCondensed = Barlow_Condensed({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-space-grotesk",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-jetbrains-mono",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -58,20 +50,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${barlowCondensed.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased bg-white text-zinc-900`}
+      className={`${barlowCondensed.variable} ${inter.variable} antialiased bg-white text-zinc-900`}
     >
-      <body className="min-h-screen flex flex-col relative overflow-x-hidden bg-white text-zinc-900">
+      <body className="min-h-screen flex flex-col relative bg-white text-zinc-900">
         {/* Unique Industrial Navigation */}
         <Navigation />
 
         {/* 2D Scroll-Driven Crane Hook & Cable Lowering Rig */}
         <CraneScrollHook />
 
-        {/* Floating Right Telemetry Dock (Liebherr Style) */}
-        <TelemetrySidebar />
-
         {/* Main Content Area */}
-        <main className="flex-1 w-full pt-18 sm:pt-20">{children}</main>
+        <main className="flex-1 w-full pt-18 sm:pt-20 overflow-x-hidden">{children}</main>
 
         {/* Industrial Blueprint Footer */}
         <Footer />
