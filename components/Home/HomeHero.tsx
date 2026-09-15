@@ -12,6 +12,7 @@ const STAT_HIGHLIGHTS = [
 export default function HomeHero() {
   return (
     <section
+      id="hero-section"
       className="relative w-full bg-zinc-950 text-white overflow-hidden bg-cover bg-center -mt-18 sm:-mt-20 pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 min-h-screen flex flex-col justify-between"
       style={{
         backgroundImage: "url('/images/hero-crane.jpg')",

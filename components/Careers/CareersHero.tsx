@@ -3,7 +3,8 @@ import React from "react";
 export default function CareersHero() {
   return (
     <section
-      className="relative w-full bg-zinc-950 text-white overflow-hidden bg-cover bg-center min-h-[35vh] sm:min-h-[38vh] flex items-center py-14 sm:py-20"
+      id="hero-section"
+      className="relative w-full bg-zinc-950 text-white overflow-hidden bg-cover bg-center -mt-18 sm:-mt-20 pt-26 sm:pt-30 pb-12 sm:pb-16 min-h-[38vh] sm:min-h-[42vh] flex items-center"
       style={{
         backgroundImage: "url('/images/boom-truck.jpg')",
       }}

@@ -50,9 +50,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${barlowCondensed.variable} ${inter.variable} antialiased bg-white text-zinc-900`}
+      className={`${barlowCondensed.variable} ${inter.variable} antialiased bg-zinc-950 text-zinc-900`}
     >
-      <body className="min-h-screen flex flex-col relative bg-white text-zinc-900">
+      <body className="min-h-screen flex flex-col relative bg-zinc-950 text-zinc-900">
         {/* Unique Industrial Navigation */}
         <Navigation />
 
@@ -60,7 +60,7 @@ export default function RootLayout({
         <CraneScrollHook />
 
         {/* Main Content Area */}
-        <main className="flex-1 w-full pt-18 sm:pt-20 overflow-x-hidden">{children}</main>
+        <main className="flex-1 w-full pt-18 sm:pt-20 overflow-x-hidden bg-white">{children}</main>
 
         {/* Industrial Blueprint Footer */}
         <Footer />

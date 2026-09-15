@@ -13,8 +13,8 @@ export default function CraneScrollHook() {
     restDelta: 0.001,
   });
 
-  // Smooth percentage interpolation - 94% ensures the hook touches the ground/bottom
-  const cableHeight = useTransform(smoothProgress, [0, 1], ["0%", "94%"]);
+  // Smooth percentage interpolation - 88% ensures the suspended box touches the ground/bottom
+  const cableHeight = useTransform(smoothProgress, [0, 1], ["0%", "88%"]);
   const pulleyRotate = useTransform(smoothProgress, [0, 1], [0, 1080]);
 
   if (reduce) return null;
@@ -73,7 +73,7 @@ export default function CraneScrollHook() {
             <div className="relative -mt-0.5">
               <svg
                 width="22"
-                height="30"
+                height="28"
                 viewBox="0 0 34 44"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +88,29 @@ export default function CraneScrollHook() {
                   strokeWidth="1.5"
                 />
               </svg>
+            </div>
+
+            {/* Rigging Slings & Suspended Cargo Box */}
+            <div className="flex flex-col items-center -mt-1.5">
+              {/* Dual Rigging Wire Slings */}
+              <svg width="26" height="9" viewBox="0 0 26 9" fill="none" className="shrink-0">
+                <line x1="13" y1="0" x2="3" y2="9" stroke="#18181b" strokeWidth="1.2" />
+                <line x1="13" y1="0" x2="23" y2="9" stroke="#18181b" strokeWidth="1.2" />
+              </svg>
+
+              {/* Suspended Industrial Cargo Box */}
+              <div className="w-7 h-5 bg-[#FFCC00] border border-zinc-950 flex flex-col items-center justify-center shadow-md relative">
+                {/* Corner Reinforcement Brackets */}
+                <div className="absolute top-0 left-0 w-1 h-1 bg-zinc-950" />
+                <div className="absolute top-0 right-0 w-1 h-1 bg-zinc-950" />
+                <div className="absolute bottom-0 left-0 w-1 h-1 bg-zinc-950" />
+                <div className="absolute bottom-0 right-0 w-1 h-1 bg-zinc-950" />
+
+                {/* Stenciled Brand Monogram */}
+                <span className="font-display font-black text-[8px] text-zinc-950 leading-none tracking-wider select-none">
+                  KMS
+                </span>
+              </div>
             </div>
           </div>
         </motion.div>

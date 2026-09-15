@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Phone, Menu, X, ArrowUpRight } from "lucide-react";
@@ -17,21 +17,47 @@ export default function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
 
-  const isHome = pathname === "/";
-  // On home page before scrolling, header is transparent with white text
-  const isTransparent = isHome && !isScrolled;
+  // Header is transparent throughout the hero section; transitions to solid white as soon as the viewport moves away from the hero
+  const isTransparent = !isScrolled;
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      const hero = document.getElementById("hero-section");
+      const headerHeight = headerRef.current ? headerRef.current.offsetHeight : 80;
+
+      // Always stay transparent whenever at the top or scrolling/bouncing up near the top
+      if (window.scrollY <= 10) {
+        setIsScrolled(false);
+        return;
+      }
+
+      if (hero) {
+        const heroHeight = hero.offsetHeight;
+        // Transparent throughout the entire hero section; switches to white as soon as the viewport scrolls past the hero
+        setIsScrolled(window.scrollY >= heroHeight - headerHeight);
+      } else {
+        setIsScrolled(window.scrollY > 80);
+      }
     };
+
+    handleScroll();
+    const animId = requestAnimationFrame(handleScroll);
+
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("resize", handleScroll, { passive: true });
+
+    return () => {
+      cancelAnimationFrame(animId);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [pathname]);
 
   return (
     <header
+      ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isTransparent
           ? "bg-transparent text-white"

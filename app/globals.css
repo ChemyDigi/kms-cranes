@@ -32,15 +32,17 @@
 }
 
 html {
-  background-color: #ffffff;
+  background-color: #09090b;
   color: #09090b;
   scroll-behavior: smooth;
+  overscroll-behavior-y: none;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #09090b;
   color: #09090b;
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overscroll-behavior-y: none;
 }
 
 ::selection {
