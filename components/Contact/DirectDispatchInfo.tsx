@@ -6,7 +6,7 @@ export default function DirectDispatchInfo() {
     <div className="space-y-8">
       {/* Emergency Hotlines Card */}
       <div className="bg-zinc-50 p-6 sm:p-8 shadow-xs">
-        <div className="text-xs text-zinc-900 font-bold uppercase tracking-wider mb-2">
+        <div className="text-xs text-[#FFCC00] font-bold uppercase tracking-wider mb-2">
           24/7 Direct Dispatch Hotline
         </div>
         <h3 className="font-display font-black text-3xl text-zinc-950 uppercase">

@@ -105,7 +105,7 @@ export default function FleetCatalogSection() {
   return (
     <section className="my-12 space-y-16">
       <div>
-        <span className="text-xs text-zinc-500 uppercase tracking-wider font-bold block">
+        <span className="text-xs text-[#FFCC00] uppercase tracking-wider font-bold block">
           Detailed Technical Data
         </span>
         <h2 className="font-display font-black text-4xl sm:text-5xl text-zinc-950 uppercase tracking-tight mt-1">
@@ -122,7 +122,7 @@ export default function FleetCatalogSection() {
           {/* Header Telemetry */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 gap-4">
             <div>
-              <div className="text-xs text-zinc-500 uppercase font-bold tracking-wider">
+              <div className="text-xs text-[#FFCC00] uppercase font-bold tracking-wider">
                 {fleet.category}
               </div>
               <h3 className="font-display font-black text-3xl sm:text-4xl text-zinc-950 uppercase tracking-tight mt-1">
@@ -225,7 +225,7 @@ export default function FleetCatalogSection() {
 
               {/* Features List */}
               <div className="space-y-3 pt-2">
-                <span className="text-xs text-zinc-500 uppercase tracking-wider font-bold block">
+                <span className="text-xs text-[#FFCC00] uppercase tracking-wider font-bold block">
                   Operational Highlights
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

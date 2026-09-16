@@ -6,7 +6,7 @@ export default function HomeCtaBanner() {
   return (
     <section className="w-full bg-zinc-100 py-16 px-4 sm:px-6 lg:px-8 text-center">
       <div className="max-w-3xl mx-auto space-y-4">
-        <span className="text-xs uppercase text-zinc-600 font-bold tracking-wider">
+        <span className="text-xs uppercase text-[#FFCC00] font-bold tracking-wider">
           Islandwide Crane Mobilization
         </span>
         <h3 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-zinc-950 uppercase tracking-tight">

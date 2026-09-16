@@ -28,7 +28,7 @@ export default function SafetyProtocolsSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full bg-zinc-50/70">
       <div className="mb-10">
-        <span className="text-xs uppercase tracking-wider font-bold text-zinc-500 block">
+        <span className="text-xs uppercase tracking-wider font-bold text-[#FFCC00] block">
           Zero Tolerance for Compromise
         </span>
         <h2 className="font-display font-black text-3xl sm:text-4xl text-zinc-950 uppercase tracking-tight mt-1">

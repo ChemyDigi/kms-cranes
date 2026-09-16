@@ -7,7 +7,7 @@ export default function DepotLocationsSection() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 space-y-6">
-          <span className="text-xs uppercase tracking-wider font-bold text-zinc-500 block">
+          <span className="text-xs uppercase tracking-wider font-bold text-[#FFCC00] block">
             Strategic Reach
           </span>
           <h2 className="font-display font-black text-3xl sm:text-5xl text-zinc-950 uppercase tracking-tight">
@@ -51,7 +51,7 @@ export default function DepotLocationsSection() {
         </div>
 
         <div className="lg:col-span-7 bg-zinc-50 p-6 sm:p-8 shadow-xs">
-          <div className="text-xs text-zinc-600 uppercase tracking-wider pb-4 font-bold">
+          <div className="text-xs text-[#FFCC00] uppercase tracking-wider pb-4 font-bold">
             Provincial Dispatch Radii &bull; Sri Lanka
           </div>
 

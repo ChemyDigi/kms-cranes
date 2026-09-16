@@ -33,7 +33,7 @@ export default function HiringModesSection() {
   return (
     <section className="my-12">
       <div className="mb-6">
-        <span className="text-xs text-zinc-500 uppercase tracking-wider block font-semibold">
+        <span className="text-xs text-[#FFCC00] uppercase tracking-wider block font-bold">
           Flexible Contract Structures
         </span>
         <h2 className="font-display font-black text-3xl sm:text-4xl text-zinc-950 uppercase tracking-tight mt-1">

@@ -32,7 +32,7 @@ export default function HomeProjectsSection() {
         {/* Left Context (5 cols) */}
         <div className="lg:col-span-5 space-y-6">
           <div>
-            <span className="text-xs uppercase text-zinc-500 font-bold tracking-wider block mb-1">
+            <span className="text-xs uppercase text-[#FFCC00] font-bold tracking-wider block mb-1">
               Track Record
             </span>
             <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-zinc-950 uppercase tracking-tight">
@@ -71,7 +71,7 @@ export default function HomeProjectsSection() {
 
         {/* Right Projects List (7 cols) */}
         <div className="lg:col-span-7 bg-zinc-50 p-6 sm:p-8 shadow-xs">
-          <div className="text-xs text-zinc-500 uppercase tracking-wider font-bold pb-4">
+          <div className="text-xs text-[#FFCC00] uppercase tracking-wider font-bold pb-4">
             Selected Major Lifts Completed
           </div>
 

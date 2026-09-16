@@ -10,10 +10,6 @@ export default function RfqForm() {
     company: "",
     phone: "",
     email: "",
-    machineType: "Rough Terrain (RT) Crane",
-    capacity: "50 Tonnes",
-    location: "Colombo / Port City",
-    duration: "1 Week",
     notes: "",
   });
 
@@ -26,7 +22,7 @@ export default function RfqForm() {
   return (
     <div className="bg-zinc-50/70 p-6 sm:p-8 lg:p-10 shadow-xs">
       <div className="pb-4 mb-6">
-        <span className="text-xs text-zinc-500 uppercase font-bold tracking-wider block mb-1">
+        <span className="text-xs text-[#FFCC00] uppercase font-bold tracking-wider block mb-1">
           Official Hire Inquiry
         </span>
         <h3 className="font-display font-black text-3xl sm:text-4xl text-zinc-950 uppercase">
@@ -46,9 +42,7 @@ export default function RfqForm() {
             Quotation Request Logged
           </h4>
           <p className="text-sm text-zinc-600 font-sans max-w-md mx-auto">
-            Thank you, <span className="text-black font-bold">{formData.name}</span>. Your request for a{" "}
-            <span className="text-black font-bold">{formData.machineType}</span> in{" "}
-            <span className="text-black font-bold">{formData.location}</span> has been routed to our dispatch engineers.
+            Thank you, <span className="text-black font-bold">{formData.name}</span>. Your inquiry has been routed to our dispatch engineers.
           </p>
           <div className="text-xs text-zinc-600">
             We will call your mobile <span className="text-black font-bold">{formData.phone}</span> shortly.
@@ -121,74 +115,6 @@ export default function RfqForm() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs text-zinc-700 uppercase mb-1 font-bold">
-                Machine Type Required
-              </label>
-              <select
-                value={formData.machineType}
-                onChange={(e) => setFormData({ ...formData, machineType: e.target.value })}
-                className="w-full bg-white text-zinc-900 px-3.5 py-2.5 text-sm shadow-xs focus:outline-none"
-              >
-                <option value="Rough Terrain (RT) Crane">Rough Terrain (RT) Crane</option>
-                <option value="Lattice Crawler Crane">Lattice Crawler Crane</option>
-                <option value="Hydraulic Boom Truck">Hydraulic Boom Truck</option>
-                <option value="Heavy Industrial Forklift">Heavy Industrial Forklift</option>
-                <option value="Multi-Axle Low Bed Trailer">Multi-Axle Low Bed Trailer</option>
-              </select>
-            </div>
-
-            <div>
-              <label className="block text-xs text-zinc-700 uppercase mb-1 font-bold">
-                Estimated Capacity
-              </label>
-              <select
-                value={formData.capacity}
-                onChange={(e) => setFormData({ ...formData, capacity: e.target.value })}
-                className="w-full bg-white text-zinc-900 px-3.5 py-2.5 text-sm shadow-xs focus:outline-none"
-              >
-                <option value="25 Tonnes">25 Tonnes</option>
-                <option value="50 Tonnes">50 Tonnes</option>
-                <option value="70 Tonnes">70 Tonnes</option>
-                <option value="100 Tonnes">100 Tonnes</option>
-                <option value="130 Tonnes">130 Tonnes</option>
-                <option value="200+ Tonnes (Crawler Heavy)">200+ Tonnes (Crawler Heavy)</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label className="block text-xs text-zinc-700 uppercase mb-1 font-bold">
-                Project Site Location in Sri Lanka
-              </label>
-              <input
-                type="text"
-                value={formData.location}
-                onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                placeholder="e.g. Kelani River Bridge / Hambantota Port"
-                className="w-full bg-white text-zinc-900 px-3.5 py-2.5 text-sm shadow-xs focus:outline-none"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs text-zinc-700 uppercase mb-1 font-bold">
-                Estimated Hire Duration
-              </label>
-              <select
-                value={formData.duration}
-                onChange={(e) => setFormData({ ...formData, duration: e.target.value })}
-                className="w-full bg-white text-zinc-900 px-3.5 py-2.5 text-sm shadow-xs focus:outline-none"
-              >
-                <option value="1 Day (Single Shift)">1 Day (Single Shift)</option>
-                <option value="3 Days">3 Days</option>
-                <option value="1 Week (7 Days)">1 Week (7 Days)</option>
-                <option value="2 Weeks">2 Weeks</option>
-                <option value="1 Month+ (Long-Term)">1 Month+ (Long-Term)</option>
-              </select>
-            </div>
-          </div>
 
           <div>
             <label className="block text-xs text-zinc-700 uppercase mb-1 font-bold">

@@ -98,7 +98,7 @@ export default function JobVacanciesSection() {
   return (
     <section className="my-12">
       <div className="pb-4 mb-8">
-        <span className="text-xs uppercase tracking-wider font-bold text-zinc-500 block">
+        <span className="text-xs uppercase tracking-wider font-bold text-[#FFCC00] block">
           Active Vacancies
         </span>
         <h2 className="font-display font-black text-4xl sm:text-5xl text-zinc-950 uppercase tracking-tight mt-1">
@@ -161,7 +161,7 @@ export default function JobVacanciesSection() {
         <div className="lg:col-span-7 bg-zinc-50 p-6 sm:p-8 lg:p-10 shadow-xs">
           <div>
             <div className="flex flex-wrap items-center justify-between pb-4 gap-2">
-              <span className="text-xs text-zinc-500 font-bold uppercase">
+              <span className="text-xs text-[#FFCC00] font-bold uppercase">
                 Position Details
               </span>
               <span className="text-xs bg-emerald-50 text-emerald-800 font-bold px-2 py-0.5">

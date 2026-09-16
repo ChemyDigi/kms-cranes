@@ -137,7 +137,7 @@ export default function FleetShowcase() {
         {/* Detailed Engineering Specifications (5 cols) */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-6 bg-zinc-50 p-6 sm:p-8 shadow-xs">
           <div>
-            <div className="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-2">
+            <div className="text-xs font-bold uppercase tracking-wider text-[#FFCC00] mb-2">
               Machine Profile
             </div>
             <h3 className="font-display font-black text-3xl sm:text-4xl text-zinc-950 uppercase tracking-tight leading-none mb-3">
@@ -169,7 +169,7 @@ export default function FleetShowcase() {
 
             {/* Primary Applications */}
             <div className="mt-6 pt-4">
-              <div className="text-xs uppercase tracking-wider text-zinc-500 font-bold mb-3">
+              <div className="text-xs uppercase tracking-wider text-[#FFCC00] font-bold mb-3">
                 Key Applications
               </div>
               <ul className="space-y-2">

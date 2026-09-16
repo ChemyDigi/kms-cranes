@@ -5,7 +5,7 @@ export default function HomeFleetSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
       <div className="mb-8">
-        <span className="text-xs uppercase text-zinc-500 font-bold tracking-wider block mb-1">
+        <span className="text-xs uppercase text-[#FFCC00] font-bold tracking-wider block mb-1">
           Our Machine Inventory
         </span>
         <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-zinc-950 uppercase tracking-tight">

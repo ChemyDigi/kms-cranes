@@ -68,7 +68,7 @@ export default function QuoteEstimator() {
     <div className="w-full bg-zinc-50/80 p-6 sm:p-10 shadow-xs">
       <div className="flex flex-col md:flex-row md:items-end justify-between pb-6 gap-4">
         <div>
-          <span className="text-xs uppercase text-zinc-500 font-bold tracking-wider block mb-1">
+          <span className="text-xs uppercase text-[#FFCC00] font-bold tracking-wider block mb-1">
             Quick Estimate Calculator
           </span>
           <h3 className="font-display font-black text-3xl sm:text-4xl text-zinc-950 uppercase tracking-tight leading-none">
