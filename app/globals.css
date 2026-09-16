@@ -32,14 +32,14 @@
 }
 
 html {
-  background-color: #09090b;
+  background-color: #ffffff;
   color: #09090b;
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
 }
 
 body {
-  background-color: #09090b;
+  background-color: #ffffff;
   color: #09090b;
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overscroll-behavior-y: none;
@@ -86,4 +86,71 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #FFCC00;
+}
+
+/* ============================================================
+   Scroll-scrub hero
+   Text choreography is transform + opacity only, scrubbed off
+   each band's --k (0..1 assembly progress) and fully reversible.
+   ============================================================ */
+
+html,
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+.scrub-stage video {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.scrub-band .w,
+.scrub-band .c {
+  display: inline-block;
+  white-space: pre;
+}
+
+/* (f) Drift-down — echoes the load beginning its descent */
+.band-drift .w {
+  --kc: clamp(0, (var(--k, 0) - var(--th, 0)) * 2.8, 1);
+  opacity: var(--kc);
+  transform: translateY(calc((1 - var(--kc)) * -28px));
+}
+
+/* (b) Grid snap-align — echoes the controlled, engineered lowering */
+.band-grid .c {
+  --kc: clamp(0, (var(--k, 0) - var(--th, 0)) * 2.6, 1);
+  opacity: var(--kc);
+  transform: translateX(calc((1 - var(--kc)) * var(--jx, 0px)));
+}
+
+/* (e) Word rise into a staged settle — echoes the arrival at rest */
+.band-rise .w {
+  --kc: clamp(0, (var(--k, 0) - var(--th, 0)) * 2.8, 1);
+  opacity: var(--kc);
+  transform: translateY(calc((1 - var(--kc)) * 30px));
+}
+.band-rise .settle-sub {
+  opacity: var(--ks, 1);
+  transform: translateY(calc((1 - var(--ks, 1)) * 14px));
+}
+.band-rise .settle-cta {
+  opacity: var(--kb, 1);
+  transform: translateY(calc((1 - var(--kb, 1)) * 18px));
+}
+
+/* Transformed text needs descender room so g, y, p keep their tails */
+.scrub-band .line {
+  padding-block: 0.08em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrub-band .w,
+  .scrub-band .c,
+  .band-rise .settle-sub,
+  .band-rise .settle-cta {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
