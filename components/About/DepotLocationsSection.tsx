@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight, Wrench } from "lucide-react";
 
 export default function DepotLocationsSection() {
   return (
@@ -11,30 +11,33 @@ export default function DepotLocationsSection() {
             Strategic Reach
           </span>
           <h2 className="font-display font-black text-3xl sm:text-5xl text-zinc-950 uppercase tracking-tight">
-            Two Hubs Covering 100% of Sri Lanka
+            Central Base Covering 100% of Sri Lanka
           </h2>
           <p className="text-zinc-700 text-sm sm:text-base font-sans leading-relaxed">
-            We operate two primary heavy equipment yards that allow rapid dispatch across all 9 provinces:
+            Operating from our central headquarters and heavy equipment yard in Angoda, we provide rapid crane dispatch and heavy equipment mobilization across all 9 provinces:
           </p>
 
           <div className="space-y-4">
             <div className="p-4 bg-zinc-50 shadow-xs">
               <div className="font-display font-bold text-lg text-zinc-950 uppercase flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-black" />
-                <span>Kelaniya / Colombo Main Yard</span>
+                <MapPin className="w-4 h-4 text-black shrink-0" />
+                <span>KMS Cranes &amp; Equipment (Pvt) Ltd</span>
+              </div>
+              <div className="text-xs text-black font-semibold mt-1">
+                349 Avissawella Rd, Angoda 10620, Sri Lanka
               </div>
               <p className="text-xs text-zinc-600 font-sans mt-1">
-                15 minutes from Colombo Port terminals, Western Container Terminal, and direct on-ramp to Central &amp; Katunayake Expressways.
+                Central headquarters and fleet facility with immediate arterial access to expressways, Colombo Port, and industrial corridors.
               </p>
             </div>
 
             <div className="p-4 bg-zinc-50 shadow-xs">
               <div className="font-display font-bold text-lg text-zinc-950 uppercase flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-black" />
-                <span>Hambantota Southern Depot</span>
+                <Wrench className="w-4 h-4 text-black shrink-0" />
+                <span>Heavy Fleet Yard &amp; Maintenance Depot</span>
               </div>
               <p className="text-xs text-zinc-600 font-sans mt-1">
-                Serving Hambantota International Port, Mirijjawila Export Zone, Mattala, and southern highway link projects.
+                Comprehensive maintenance workshop equipped with hydraulic test rigs, certified rigging tackle storage, and 24/7 emergency dispatch capability.
               </p>
             </div>
           </div>
@@ -44,7 +47,7 @@ export default function DepotLocationsSection() {
               href="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#FFCC00] text-black font-display font-bold text-base uppercase tracking-wider hover:bg-black hover:text-white transition-colors shadow-xs"
             >
-              <span>Contact Depot Supervisor</span>
+              <span>Contact Operations Desk</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -52,7 +55,7 @@ export default function DepotLocationsSection() {
 
         <div className="lg:col-span-7 bg-zinc-50 p-6 sm:p-8 shadow-xs">
           <div className="text-xs text-[#FFCC00] uppercase tracking-wider pb-4 font-bold">
-            Provincial Dispatch Radii &bull; Sri Lanka
+            Provincial Dispatch Radii &bull; From Angoda HQ
           </div>
 
           <div className="mt-4 space-y-3 text-xs">

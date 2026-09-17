@@ -31,7 +31,7 @@ export default function ContactHero() {
             Contact KMS Cranes
           </h1>
           <p className="text-base sm:text-lg text-zinc-300 font-sans max-w-2xl leading-relaxed">
-            Need a heavy crane on site tomorrow or planning a major structural project? Contact our 24/7 dispatch desk in Kelaniya and Hambantota. We provide fast quotes, transparent pricing, and immediate equipment mobilization.
+            Need a heavy crane on site tomorrow or planning a major structural project? Contact our 24/7 dispatch desk in Angoda. We provide fast quotes, transparent pricing, and immediate equipment mobilization.
           </p>
         </div>
       </div>

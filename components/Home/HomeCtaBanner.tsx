@@ -13,7 +13,7 @@ export default function HomeCtaBanner() {
           Need a Crane on Your Job Site Tomorrow?
         </h3>
         <p className="text-zinc-600 text-sm sm:text-base font-sans max-w-xl mx-auto leading-relaxed">
-          Our Kelaniya and Hambantota depots maintain round-the-clock dispatch readiness. Call our direct line for instant equipment availability and transparent rates.
+          Our Angoda headquarters and fleet yard maintain round-the-clock dispatch readiness. Call our direct line for instant equipment availability and transparent rates.
         </p>
 
         <div className="pt-6 flex flex-wrap justify-center items-center gap-4">

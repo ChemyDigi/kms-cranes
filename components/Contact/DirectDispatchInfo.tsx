@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, Mail, Clock, Compass } from "lucide-react";
+import { Phone, Mail, Clock, Compass, Wrench } from "lucide-react";
 
 export default function DirectDispatchInfo() {
   return (
@@ -25,7 +25,7 @@ export default function DirectDispatchInfo() {
             <div>
               <div className="font-black text-lg text-black">+94 11 291 5566</div>
               <div className="text-[11px] text-zinc-500 font-medium">
-                Main Depot &bull; Kelaniya Direct
+                Headquarters Operations Desk &bull; Angoda
               </div>
             </div>
           </a>
@@ -38,7 +38,7 @@ export default function DirectDispatchInfo() {
             <div>
               <div className="font-black text-lg text-black">+94 77 732 1890</div>
               <div className="text-[11px] text-zinc-500 font-medium">
-                Hambantota &amp; Islandwide Mobile Dispatch
+                24/7 Islandwide Emergency Dispatch Hotline
               </div>
             </div>
           </a>
@@ -58,45 +58,45 @@ export default function DirectDispatchInfo() {
         </div>
       </div>
 
-      {/* Depot Locations Card */}
+      {/* Headquarters & Yard Card */}
       <div className="bg-zinc-50 p-6 sm:p-8 space-y-6 shadow-xs">
         <h4 className="font-display font-black text-2xl text-zinc-950 uppercase tracking-wider">
-          Depot Locations &amp; Yards
+          Headquarters &amp; Equipment Yard
         </h4>
 
         <div className="space-y-4 text-xs">
           <div className="p-4 bg-white shadow-xs">
             <div className="flex items-center justify-between text-black font-bold">
-              <span>Kelaniya / Colombo Central Yard</span>
-              <span className="text-[10px] bg-zinc-900 text-white px-2 py-0.5">HQ</span>
+              <span>KMS Cranes &amp; Equipment (Pvt) Ltd</span>
+              <span className="text-[10px] bg-zinc-900 text-white px-2 py-0.5">HQ &amp; Yard</span>
             </div>
-            <div className="text-zinc-700 mt-2">
-              No. 142/B, Kandy Road, Peliyagoda / Kelaniya, Sri Lanka
+            <div className="text-zinc-900 font-semibold mt-2">
+              349 Avissawella Rd, Angoda 10620, Sri Lanka
             </div>
             <div className="text-zinc-500 text-[11px] mt-1 flex items-center gap-1.5 font-medium">
-              <Compass className="w-3.5 h-3.5 text-black" />
-              <span>Peliyagoda Interchange</span>
+              <Compass className="w-3.5 h-3.5 text-black shrink-0" />
+              <span>Avissawella Road &bull; Rapid Expressway &amp; Arterial Access</span>
             </div>
           </div>
 
           <div className="p-4 bg-white shadow-xs">
             <div className="flex items-center justify-between text-black font-bold">
-              <span>Hambantota Southern Depot</span>
-              <span className="text-[10px] bg-zinc-900 text-white px-2 py-0.5">Branch</span>
+              <span>Central Fleet Yard &amp; Maintenance Depot</span>
+              <span className="text-[10px] bg-[#FFCC00] text-black px-2 py-0.5 font-bold">24/7 Ready</span>
             </div>
-            <div className="text-zinc-700 mt-2">
-              Heavy Industrial Zone, Mirijjawila, Hambantota, Sri Lanka
+            <div className="text-zinc-600 mt-2 leading-relaxed">
+              Complete fleet staging yard, hydraulic maintenance workshops, SLSI load test equipment, and heavy low-bed trailer transport hub.
             </div>
-            <div className="text-zinc-500 text-[11px] mt-1 flex items-center gap-1.5 font-medium">
-              <Compass className="w-3.5 h-3.5 text-black" />
-              <span>Port Access Corridor</span>
+            <div className="text-zinc-500 text-[11px] mt-2 flex items-center gap-1.5 font-medium">
+              <Wrench className="w-3.5 h-3.5 text-black shrink-0" />
+              <span>Full-Service Repair &amp; Rigging Support</span>
             </div>
           </div>
         </div>
 
         <div className="pt-2 text-xs text-zinc-600 flex items-center gap-2">
-          <Clock className="w-4 h-4 text-black" />
-          <span>Office: Mon - Sat 8:00 AM - 6:00 PM | Yard: 24/7 Dispatch</span>
+          <Clock className="w-4 h-4 text-black shrink-0" />
+          <span>Office: Mon - Sat 8:00 AM - 6:00 PM | Fleet Yard: 24/7 Dispatch Islandwide</span>
         </div>
       </div>
     </div>

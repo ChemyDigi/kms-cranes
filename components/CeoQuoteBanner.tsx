@@ -10,7 +10,7 @@ export default function CeoQuoteBanner() {
           <div className="relative w-64 h-64 sm:w-72 sm:h-72 bg-zinc-900 overflow-hidden shadow-xl">
             <Image
               src="/images/CEO.jpg"
-              alt="Lukshan Chanaka, Managing Director of KMS Cranes"
+              alt="Lukshan Chanaka, Managing Director of KMS Cranes & Equipment"
               fill
               sizes="(max-width: 768px) 260px, 300px"
               className="object-cover object-top filter grayscale contrast-110"
@@ -31,7 +31,7 @@ export default function CeoQuoteBanner() {
                   Lukshan Chanaka
                 </div>
                 <div className="text-xs font-telemetry text-zinc-400 uppercase tracking-wider mt-0.5">
-                  Managing Director, KMS Cranes (Pvt) Ltd
+                  Managing Director, KMS Cranes &amp; Equipment (Pvt) Ltd
                 </div>
               </div>
               <div className="text-xs font-telemetry text-zinc-400">

@@ -14,7 +14,7 @@ const CORE_VALUES = [
   },
   {
     title: "3. RAPID DISPATCH",
-    desc: "With operational hubs strategically positioned in Kelaniya (Western Province) and Hambantota (Southern Province), we dispatch heavy cranes islandwide within 24 to 48 hours.",
+    desc: "Centrally positioned at 349 Avissawella Rd, Angoda with rapid arterial and expressway connectivity, we dispatch heavy cranes and low-bed transports islandwide within 24 to 48 hours.",
     icon: Clock,
   },
   {

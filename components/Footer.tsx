@@ -23,7 +23,7 @@ export default function Footer() {
               Professionals in the field of heavy machinery and crane hiring. We hire all types of RT cranes, forklifts, boom trucks, and low beds for reasonable prices across Sri Lanka.
             </p>
             <div className="pt-2 text-xs font-telemetry text-zinc-500">
-              Kelaniya Depot (Western) &bull; Hambantota Hub (Southern)
+              349 Avissawella Rd, Angoda 10620 &bull; Islandwide Heavy Crane Hire
             </div>
           </div>
 
@@ -67,14 +67,14 @@ export default function Footer() {
                 className="flex items-center gap-2 text-zinc-900 hover:text-black font-bold"
               >
                 <Phone className="w-4 h-4 text-zinc-500" />
-                <span>Western Depot: +94 11 291 5566</span>
+                <span>Headquarters: +94 11 291 5566</span>
               </a>
               <a
                 href="tel:+94777321890"
                 className="flex items-center gap-2 text-zinc-900 hover:text-black font-bold"
               >
                 <Phone className="w-4 h-4 text-zinc-500" />
-                <span>Southern Depot: +94 77 732 1890</span>
+                <span>24/7 Mobile Dispatch: +94 77 732 1890</span>
               </a>
               <div className="flex items-center gap-2 text-zinc-600 pt-1 text-xs">
                 <Mail className="w-4 h-4 text-zinc-500" />
@@ -97,7 +97,7 @@ export default function Footer() {
         {/* Lower Legal & Accreditations */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-telemetry text-zinc-500">
           <div>
-            &copy; {new Date().getFullYear()} KMS Cranes (Pvt) Ltd. All Rights Reserved.
+            &copy; {new Date().getFullYear()} KMS Cranes &amp; Equipment (Pvt) Ltd. All Rights Reserved.
           </div>
           <div className="flex items-center gap-4 text-zinc-600">
             <span>ISO 9001:2015</span>

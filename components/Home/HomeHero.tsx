@@ -44,7 +44,7 @@ const GATES = [
 const STATS = [
   { value: "300T", label: "Max Hoist Capacity", detail: "Single Crane Rating" },
   { value: "35+", label: "Heavy Fleet Machines", detail: "Modern RT & Crawlers" },
-  { value: "24/7", label: "Dispatch Readiness", detail: "Kelaniya & Hambantota" },
+  { value: "24/7", label: "Dispatch Readiness", detail: "Angoda & Islandwide" },
   { value: "100%", label: "Certified Riggers", detail: "SLSI & OSHA Compliant" },
 ];
 
@@ -381,7 +381,7 @@ export default function HomeHero() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="font-telemetry text-[11px] font-bold tracking-[0.2em] uppercase text-zinc-500">
-            <span className="text-[#FFCC00]">&#9632;</span> Kelaniya &amp; Hambantota &middot; 24/7 Dispatch
+            <span className="text-[#FFCC00]">&#9632;</span> Angoda HQ &middot; 24/7 Islandwide Dispatch
           </p>
           <h1 className="mt-4 font-display font-black text-4xl sm:text-6xl text-zinc-950 uppercase tracking-tight leading-[0.92]">
             {HEADLINE}
@@ -503,7 +503,7 @@ export default function HomeHero() {
             className="scrub-band band-drift absolute inset-x-4 sm:inset-x-6 lg:inset-x-8 top-1/2 -translate-y-1/2 max-w-[20rem] md:max-w-[24rem] lg:max-w-[28rem] xl:max-w-[34rem]"
           >
             <p className="font-telemetry text-[11px] font-bold tracking-[0.2em] uppercase text-zinc-500 mb-4">
-              <span className="text-[#FFCC00]">&#9632;</span> Kelaniya &amp; Hambantota &middot; 24/7 Dispatch
+              <span className="text-[#FFCC00]">&#9632;</span> Angoda HQ &middot; 24/7 Islandwide Dispatch
             </p>
             <div className="line font-display font-black text-4xl lg:text-5xl xl:text-7xl text-zinc-950 uppercase tracking-tight leading-[0.9]">
               <WordLine words={HEADLINE_WORDS} />

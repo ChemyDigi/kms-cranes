@@ -49,10 +49,10 @@ export default function JourneySection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 bg-white/95 p-4 shadow-xs">
               <div className="text-xs text-black font-bold uppercase">
-                Kelaniya Headquarters Depot
+                Angoda Headquarters &amp; Fleet Yard
               </div>
               <div className="text-xs text-zinc-600 font-sans mt-1">
-                Fully equipped maintenance workshop with hydraulic test rigs and load test beds.
+                349 Avissawella Rd, Angoda &bull; Fully equipped maintenance workshop with hydraulic test rigs and fleet staging yard.
               </div>
             </div>
           </div>

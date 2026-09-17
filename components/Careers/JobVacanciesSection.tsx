@@ -35,7 +35,7 @@ const OPENINGS: JobOpening[] = [
     id: "crawler-operator",
     title: "Lattice Boom Crawler Crane Specialist",
     department: "Heavy Infrastructure Division",
-    location: "Harbor & Port Projects (Colombo / Hambantota)",
+    location: "Harbor & Port Projects (Islandwide Sites)",
     type: "Full-Time (Permanent)",
     experience: "7+ Years on Lattice Crawler Cranes (100T - 300T)",
     description:
@@ -51,7 +51,7 @@ const OPENINGS: JobOpening[] = [
     id: "heavy-mechanic",
     title: "Heavy Equipment Hydraulic Technician",
     department: "Maintenance & Workshop",
-    location: "Kelaniya Central Workshop & Field Dispatch",
+    location: "Angoda Central Workshop & Field Dispatch",
     type: "Full-Time",
     experience: "4+ Years in Crane Hydraulics & Diesel Engines",
     description:
